@@ -1,3 +1,25 @@
 body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.calculator {
     text-align: center;
+    border: 1px solid black;
+    justify-content: center;
+}
+
+
+input, select, button {
+    width: 90%;
+    margin: 10px auto;
+    padding: 10px;
+}
+
+#result {
+    width: 90%;
+    margin: 10px auto;
+    padding: 10px;
+    border: 1px solid black;
 }

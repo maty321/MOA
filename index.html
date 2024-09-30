@@ -1,16 +1,29 @@
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="cs">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hello world</title>
-    <link rel="manifest" href="/manifest.json">
+    <title>Kalkulačka</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="manifest.json">
     <script src="app.js"></script>
 </head>
 <body>
-    <h1>Hello world</h1>
-    <button onclick="sayHello()">Click me!</button>
-    <p id="hello"></p>
+    <div class="calculator">
+        <h1>Kalkulačka</h1>
+        <form id="calcForm">
+            <input type="number" id="operand1" placeholder="První číslo" required>
+            <select id="operation">
+                <option value="add">Sčítání (+)</option>
+                <option value="subtract">Odčítání (-)</option>
+                <option value="multiply">Násobení (×)</option>
+                <option value="divide">Dělení (÷)</option>
+            </select>
+            <input type="number" id="operand2" placeholder="Druhé číslo" required>
+            <button type="button" onclick="calculate()">Spočítat</button>
+        </form>
+        <div id="result">Výsledek</div>
+    </div>
 </body>
 </html>
